@@ -1,0 +1,41 @@
+<svg viewBox="0 0 680 190" xmlns="http://www.w3.org/2000/svg" aria-label="EdenCorporate">
+  <defs>
+    <!-- Clip : moitié supérieure du carré bleu (coordonnées locales du carré) -->
+    <clipPath id="blueUpper">
+      <rect x="-50" y="-50" width="100" height="50"/>
+    </clipPath>
+    <!-- Clip : moitié inférieure du carré bleu -->
+    <clipPath id="blueLower">
+      <rect x="-50" y="0" width="100" height="50"/>
+    </clipPath>
+  </defs>
+
+  <!-- Couche 1 : moitié basse du carré bleu (derrière le violet) -->
+  <g transform="translate(125,70) rotate(-37)">
+    <g clip-path="url(#blueLower)">
+      <rect x="-43" y="-43" width="86" height="86" rx="14"
+            fill="white" stroke="#7677B7" stroke-width="10"/>
+    </g>
+  </g>
+
+  <!-- Couche 2 : carré violet complet (passe devant la partie basse du bleu) -->
+  <g transform="translate(68,118) rotate(-37)">
+    <rect x="-47" y="-47" width="94" height="94" rx="16"
+          fill="white" stroke="#760078" stroke-width="11"/>
+  </g>
+
+  <!-- Couche 3 : moitié haute du carré bleu (passe devant le violet) -->
+  <g transform="translate(125,70) rotate(-37)">
+    <g clip-path="url(#blueUpper)">
+      <rect x="-43" y="-43" width="86" height="86" rx="14"
+            fill="white" stroke="#7677B7" stroke-width="10"/>
+    </g>
+  </g>
+
+  <!-- Texte "Eden" marine + "Corpor@te" bleu-gris -->
+  <text x="175" y="132"
+        font-family="'Arial Black','Helvetica Neue',Arial,Helvetica,sans-serif"
+        font-weight="900" font-size="60" letter-spacing="-1">
+    <tspan fill="#1a1080">Eden</tspan><tspan fill="#7677B7">Corpor@te</tspan>
+  </text>
+</svg>
