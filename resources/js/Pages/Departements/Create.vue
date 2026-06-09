@@ -17,8 +17,8 @@ const submit = () => form.post('/departements');
                     <h2 class="text-base font-extrabold" :class="dark ? 'text-white' : 'text-slate-800'">Ajouter un département</h2>
                     <p class="text-[11px] mt-0.5" :class="dark ? 'text-slate-400' : 'text-slate-500'">Remplissez les informations ci-dessous</p>
                 </div>
-                <Link href="/departements" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all"
-                    :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white hover:border-slate-500' : 'border-slate-200 text-slate-500 hover:text-slate-800'">
+                <Link href="/departements" class="inline-flex text-decoration-none items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all text-decoration-none"
+                    :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white hover:border-slate-500' : 'border-slate-200 text-slate-500 hover:text-slate-800' ">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
                     Retour
                 </Link>

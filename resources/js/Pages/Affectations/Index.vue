@@ -28,13 +28,16 @@ const destroy = (id) => {
                 <Link href="/affectations/create"
                     class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white
                            bg-gradient-to-r from-[#760078] to-[#7677B7] hover:from-[#5a005c] hover:to-[#5a5b9c]
-                           transition-all shadow-sm shadow-purple-900/20">
+                           transition-all shadow-sm shadow-purple-900/20 text-decoration-none">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                     </svg>
                     Ajouter
                 </Link>
             </div>
+            
+
+          
 
             <div class="rounded-2xl border overflow-hidden transition-colors"
                 :class="dark ? 'bg-[#161b22] border-[#21262d]' : 'bg-white border-slate-200 shadow-sm'">

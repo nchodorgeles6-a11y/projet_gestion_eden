@@ -354,10 +354,10 @@ const statusBadge = (color) => ({
             </div>
 
             <!-- ── KPI Cards ──────────────────────────────────────────────── -->
-            <div class="grid grid-cols-2 xl:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 ">
 
                 <Link href="/users"
-                    class="kpi-card relative overflow-hidden rounded-2xl p-3.5 bg-gradient-to-br from-[#760078] to-[#5a005c] shadow-lg shadow-purple-900/20 block transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-purple-900/30">
+                    class="text-decoration-none kpi-card relative overflow-hidden rounded-2xl p-3.5 bg-gradient-to-br from-[#760078] to-[#5a005c] shadow-lg shadow-purple-900/20 block transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-purple-900/30  text-decoration-none" >
                     <div class="absolute -right-4 -top-4 w-16 h-16 bg-white/10 rounded-full"></div>
                     <div class="absolute -left-5 -bottom-5 w-20 h-20 bg-white/5 rounded-full"></div>
                     <div class="relative z-10">
@@ -371,7 +371,7 @@ const statusBadge = (color) => ({
                 </Link>
 
                 <Link href="/conges?statut=pending"
-                    class="kpi-card relative overflow-hidden rounded-2xl p-3.5 bg-gradient-to-br from-amber-500 to-amber-700 shadow-lg shadow-amber-900/20 block transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-amber-900/30">
+                    class="text-decoration-none kpi-card relative overflow-hidden rounded-2xl p-3.5 bg-gradient-to-br from-amber-500 to-amber-700 shadow-lg shadow-amber-900/20 block transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-amber-900/30  text-decoration-none">
                     <div class="absolute -right-4 -top-4 w-16 h-16 bg-white/10 rounded-full"></div>
                     <div class="absolute -left-5 -bottom-5 w-20 h-20 bg-white/5 rounded-full"></div>
                     <div class="relative z-10">
@@ -385,7 +385,7 @@ const statusBadge = (color) => ({
                 </Link>
 
                 <Link href="/bulletins-paie"
-                    class="kpi-card relative overflow-hidden rounded-2xl p-3.5 bg-gradient-to-br from-[#7677B7] to-[#5a5b9c] shadow-lg shadow-indigo-900/20 block transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-indigo-900/30">
+                    class="text-decoration-none kpi-card relative overflow-hidden rounded-2xl p-3.5 bg-gradient-to-br from-[#7677B7] to-[#5a5b9c] shadow-lg shadow-indigo-900/20 block transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-indigo-900/30 text-decoration-none">
                     <div class="absolute -right-4 -top-4 w-16 h-16 bg-white/10 rounded-full"></div>
                     <div class="absolute -left-5 -bottom-5 w-20 h-20 bg-white/5 rounded-full"></div>
                     <div class="relative z-10">
@@ -398,8 +398,8 @@ const statusBadge = (color) => ({
                 </Link>
 
                 <Link href="/transactions"
-                    class="kpi-card relative overflow-hidden rounded-2xl p-3.5 shadow-lg block transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl"
-                    :class="(kpis.solde_tresorerie ?? 0) >= 0 ? 'bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-emerald-900/20' : 'bg-gradient-to-br from-rose-500 to-rose-700 shadow-rose-900/20'">
+                    class="kpi-card relative overflow-hidden rounded-2xl p-3.5 shadow-lg block transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl text-decoration-none"
+                    :class=" fmt(kpis.solde_tresorerie) >= 0 ? 'bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-emerald-900/20' : 'bg-gradient-to-br from-rose-500 to-rose-700 shadow-rose-900/20'">
                     <div class="absolute -right-4 -top-4 w-16 h-16 bg-white/10 rounded-full"></div>
                     <div class="absolute -left-5 -bottom-5 w-20 h-20 bg-white/5 rounded-full"></div>
                     <div class="relative z-10">
@@ -420,8 +420,8 @@ const statusBadge = (color) => ({
                         <h3 class="text-sm font-bold" :class="dark ? 'text-white' : 'text-slate-800'">Présence aujourd'hui</h3>
                         <p class="text-[11px] mt-0.5" :class="sL(dark)">{{ presenceToday.total ?? 0 }} collaborateurs au total</p>
                     </div>
-                    <Link href="/suivies" class="text-[11px] font-semibold px-3 py-1.5 rounded-xl border transition-all"
-                        :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-900'">
+                    <Link href="/suivies" class="text-decoration-none text-[11px] font-semibold px-3 py-1.5 rounded-xl border transition-all"
+                        :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-900 text-decoration-none'">
                         Gérer →
                     </Link>
                 </div>
@@ -511,7 +511,7 @@ const statusBadge = (color) => ({
             <div class="grid grid-cols-1 xl:grid-cols-4 gap-4 items-stretch">
 
                 <!-- Effectifs par département (2/4) -->
-                <div class="xl:col-span-2">
+                <!-- <div class="xl:col-span-2">
                     <ChartCard title="Effectifs par département" subtitle="Affectations actives" height="160px">
                         <canvas ref="deptCanvas"></canvas>
                         <template #footer>
@@ -520,7 +520,7 @@ const statusBadge = (color) => ({
                             </div>
                         </template>
                     </ChartCard>
-                </div>
+                </div> -->
 
                 <!-- Répartition H/F (1/4) -->
                 <div>
@@ -574,7 +574,7 @@ const statusBadge = (color) => ({
                         :class="dark ? 'border-[#21262d]' : 'border-slate-100'">
                         <h3 class="text-sm font-bold" :class="dark ? 'text-white' : 'text-slate-800'">Congés en attente</h3>
                         <Link href="/conges?statut=pending"
-                            class="text-[10px] font-semibold px-2 py-1 rounded-lg transition-all"
+                            class="text-decoration-none text-[10px] font-semibold px-2 py-1 rounded-lg transition-all"
                             :class="dark ? 'text-slate-400 hover:text-white' : 'text-slate-500 hover:text-slate-900'">
                             Tout voir →
                         </Link>
@@ -594,7 +594,7 @@ const statusBadge = (color) => ({
                             <p class="text-[10px]" :class="sL(dark)">{{ c.date_debut }} → {{ c.date_fin }}</p>
                         </div>
                         <Link :href="`/conges/${c.id}/edit`"
-                            class="px-2 py-1 rounded-lg text-[10px] font-semibold border transition-all shrink-0"
+                            class="text-decoration-none px-2 py-1 rounded-lg text-[10px] font-semibold border transition-all shrink-0"
                             :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-900'">
                             Voir
                         </Link>

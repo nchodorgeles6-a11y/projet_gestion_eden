@@ -56,7 +56,7 @@ const inp = (d) => d
 
             <!-- En-tête -->
             <div class="flex items-center gap-3">
-                <Link href="/factures" class="p-2 rounded-xl border transition-all"
+                <Link href="/factures" class="p-2 rounded-xl border transition-all text-decoration-none"
                     :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-900'">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
                 </Link>
@@ -177,7 +177,7 @@ const inp = (d) => d
                             class="px-6 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-[#760078] to-[#7677B7] hover:from-[#5a005c] hover:to-[#5a5b9c] transition-all disabled:opacity-50">
                             {{ form.processing ? 'Enregistrement…' : (isEdit ? 'Mettre à jour' : 'Enregistrer la facture') }}
                         </button>
-                        <Link href="/factures" class="px-5 py-2 rounded-xl text-xs font-semibold border transition-all"
+                        <Link href="/factures" class="text-decoration-none px-5 py-2 rounded-xl text-xs font-semibold border transition-all"
                             :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-900'">
                             Annuler
                         </Link>

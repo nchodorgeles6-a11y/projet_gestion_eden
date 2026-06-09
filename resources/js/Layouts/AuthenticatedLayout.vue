@@ -196,12 +196,12 @@ const skOff = 'text-slate-500 hover:text-slate-200 hover:bg-white/5';
             ]">
 
             <!-- Logo + fermeture mobile -->
-            <div class="px-4 py-3 border-b shrink-0 flex items-center justify-between"
+            <div class="px-4 py-3 border-b shrink-0 flex items-center justify-between " 
                 :class="dark ? 'border-[#21262d]' : 'border-slate-900/80'">
                 <Link href="/" class="flex items-center py-1">
-                    <img src="/images/logo.svg" alt="Eden Corpor@te"
-                         class="h-9 w-auto object-contain"
-                         style="filter: brightness(0) invert(1);" />
+                    <img src="/images/EdenCorporate2.png" alt="Eden Corpor@te" class=" h-[70px] w-auto object-contain mx-auto"
+                          
+                          />
                 </Link>
                 <button @click="closeSidebar"
                     class="lg:hidden p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors">

@@ -26,7 +26,7 @@ const destroy = (id) => {
                     </p>
                 </div>
                 <Link href="/postes/create"
-                    class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white
+                    class="text-decoration-none inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white
                            bg-gradient-to-r from-[#760078] to-[#7677B7] hover:from-[#5a005c] hover:to-[#5a5b9c]
                            transition-all shadow-sm shadow-purple-900/20">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

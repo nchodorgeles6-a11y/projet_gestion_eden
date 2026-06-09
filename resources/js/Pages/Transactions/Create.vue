@@ -82,7 +82,7 @@ const inp = (d) => d
             <!-- En-tête -->
             <div class="flex items-center gap-3">
                 <Link href="/transactions"
-                    class="p-2 rounded-xl border transition-all"
+                    class="text-decoration-none p-2 rounded-xl border transition-all"
                     :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white hover:bg-[#21262d]' : 'border-slate-200 text-slate-500 hover:text-slate-800 hover:bg-slate-50'">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
                 </Link>

@@ -98,18 +98,18 @@ const totalPrimesUser = computed(() => {
 
                     <div class="flex items-center gap-2 shrink-0">
                         <Link :href="`/bulletins-paie/create?user_id=${user.id}`"
-                            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-[#760078] to-[#7677B7] hover:from-[#5a005c] hover:to-[#5a5b9c] transition-all">
+                            class="text-decoration-none inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-[#760078] to-[#7677B7] hover:from-[#5a005c] hover:to-[#5a5b9c] transition-all">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                             Nouveau bulletin
                         </Link>
                         <Link :href="`/users/${user.id}/edit`"
-                            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all"
+                            class="text-decoration-none inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all"
                             :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-800'">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
                             Modifier
                         </Link>
                         <Link href="/users"
-                            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all"
+                            class="text-decoration-none inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all"
                             :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-800'">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
                             Retour
@@ -220,7 +220,7 @@ const totalPrimesUser = computed(() => {
                                 </td>
                                 <td class="px-5 py-2.5 text-right">
                                     <Link :href="`/bulletins-paie/${b.id}`"
-                                        class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold border transition-all"
+                                        class="text-decoration-none inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold border transition-all"
                                         :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-800'">
                                         Voir
                                     </Link>
@@ -312,7 +312,7 @@ const totalPrimesUser = computed(() => {
                             </svg>
                         </div>
                         <p class="text-sm font-semibold" :class="dark ? 'text-slate-400' : 'text-slate-500'">Aucune affectation enregistrée</p>
-                        <Link href="/affectations/create" class="mt-2 inline-block text-xs text-[#760078] font-semibold hover:underline">
+                        <Link href="/affectations/create" class="text-decoration-none mt-2 inline-block text-xs text-[#760078] font-semibold hover:underline">
                             Ajouter la première affectation
                         </Link>
                     </div>
@@ -415,7 +415,7 @@ const totalPrimesUser = computed(() => {
                     <!-- Bouton ajouter une étape -->
                     <div class="mt-5 pt-4 border-t" :class="div(dark)">
                         <Link :href="`/affectations/create`"
-                            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all"
+                            class="text-decoration-none inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all"
                             :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-600 hover:text-slate-900'">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
                             Enregistrer une nouvelle affectation

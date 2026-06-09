@@ -138,7 +138,7 @@ const div = (d) => d ? 'border-[#21262d]' : 'border-slate-100';
                     <h2 class="text-base font-extrabold" :class="dark ? 'text-white' : 'text-slate-800'">Nouveau bulletin de paie</h2>
                     <p class="text-[11px] mt-0.5" :class="sL(dark)">Étape {{ currentStep }} sur {{ totalSteps }} — {{ steps[currentStep - 1].sub }}</p>
                 </div>
-                <Link href="/bulletins-paie" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all"
+                <Link href="/bulletins-paie" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all text-decoration-none"
                     :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-800'">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
                     Retour

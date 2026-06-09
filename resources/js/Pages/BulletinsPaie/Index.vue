@@ -49,14 +49,14 @@ const div = (d) => d ? 'border-[#21262d]' : 'border-slate-100';
                         class="rounded-xl border px-3 py-1.5 text-xs transition-all focus:outline-none focus:ring-2 w-44"
                         :class="dark ? 'bg-[#0d1117] border-[#30363d] text-white placeholder-slate-600 focus:border-[#760078] focus:ring-[#760078]/20' : 'bg-slate-50 border-slate-200 text-slate-900 placeholder-slate-400 focus:border-[#760078] focus:ring-[#760078]/15'" />
                     <a href="/bulletins-paie/export"
-                        class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold border transition-all"
+                        class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold border transition-all text-decoration-none"
                         :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-800'">
                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         Export CSV
                     </a>
                     <Link href="/bulletins-paie/create"
                         class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white
-                               bg-gradient-to-r from-[#760078] to-[#7677B7] hover:from-[#5a005c] hover:to-[#5a5b9c] transition-all shadow-sm">
+                                text-decoration-none bg-gradient-to-r from-[#760078] to-[#7677B7] hover:from-[#5a005c] hover:to-[#5a5b9c] transition-all shadow-sm">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
                         Nouveau bulletin
                     </Link>
@@ -88,7 +88,7 @@ const div = (d) => d ? 'border-[#21262d]' : 'border-slate-100';
                                 <span class="font-mono text-[11px] font-semibold" :class="dark ? 'text-slate-400' : 'text-slate-500'">{{ b.reference }}</span>
                             </td>
                             <td class="px-5 py-3">
-                                <Link :href="`/users/${b.user_id}`" class="font-semibold text-xs hover:text-[#760078] transition-colors" :class="dark ? 'text-slate-200' : 'text-slate-800'">
+                                <Link :href="`/users/${b.user_id}`" class="text-decoration-none font-semibold text-xs hover:text-[#760078] transition-colors" :class="dark ? 'text-slate-200' : 'text-slate-800'">
                                     {{ b.user?.nom }} {{ b.user?.prenom }}
                                 </Link>
                             </td>
@@ -109,7 +109,7 @@ const div = (d) => d ? 'border-[#21262d]' : 'border-slate-100';
                             <td class="px-5 py-3">
                                 <div class="flex items-center justify-end gap-1.5">
                                     <Link :href="`/bulletins-paie/${b.id}`"
-                                        class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold border transition-all"
+                                        class="text-decoration-none inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold border transition-all"
                                         :class="dark ? 'border-[#30363d] text-slate-400 hover:text-white' : 'border-slate-200 text-slate-500 hover:text-slate-800'">
                                         <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
                                         Voir

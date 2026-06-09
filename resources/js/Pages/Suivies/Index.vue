@@ -292,7 +292,7 @@ const inp = (d) => d
                                         {{ p.user.prenom?.charAt(0) }}{{ p.user.nom?.charAt(0) }}
                                     </div>
                                     <div>
-                                        <Link :href="`/users/${p.user.id}`" class="text-xs font-bold hover:text-[#760078] transition-colors" :class="dark ? 'text-slate-100' : 'text-slate-800'">
+                                        <Link :href="`/users/${p.user.id}`" class="text-decoration-none text-xs font-bold hover:text-[#760078] transition-colors" :class="dark ? 'text-slate-100' : 'text-slate-800'">
                                             {{ p.user.nom }} {{ p.user.prenom }}
                                         </Link>
                                         <p class="text-[10px]" :class="sL(dark)">{{ p.user.email }}</p>
@@ -585,7 +585,7 @@ const inp = (d) => d
                                 </template>
                                 <div v-else class="text-[11px]" :class="sL(dark)">
                                     Aucun congé enregistré.
-                                    <Link href="/conges/create" class="text-[#760078] hover:underline ml-1">Créer un congé →</Link>
+                                    <Link href="/conges/create" class="text-decoration-none text-[#760078] hover:underline ml-1">Créer un congé →</Link>
                                 </div>
                             </div>
 
